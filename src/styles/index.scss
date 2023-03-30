@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  @apply bg-white text-neutral-900;
+}
+
+.rainbow-borders {
+  overflow: hidden;
+}
+
+.rainbow-borders:before{
+  content: "";
+  height: 160%;
+  width: 160%;
+  position: absolute;
+  background: conic-gradient(
+      #fd004c,
+      #fe9000,
+      #fff020,
+      #3edf4b,
+      #3363ff,
+      #b102b7,
+      #fd004c
+  );
+  left: -27%;
+  top: -29%;
+  animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
