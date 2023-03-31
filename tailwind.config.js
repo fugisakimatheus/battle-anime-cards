@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'board': "url('/src/assets/board.jpg')",
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/line-clamp'),

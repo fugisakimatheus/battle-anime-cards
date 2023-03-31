@@ -12,7 +12,7 @@ html, body {
 
 .rainbow-borders:before{
   content: "";
-  height: 160%;
+  height: 167.4%;
   width: 160%;
   position: absolute;
   background: conic-gradient(
@@ -24,8 +24,8 @@ html, body {
       #b102b7,
       #fd004c
   );
-  left: -27%;
-  top: -29%;
+  left: -29%;
+  top: -34%;
   animation: spin 1.5s infinite linear;
 }
 
