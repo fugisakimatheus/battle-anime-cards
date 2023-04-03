@@ -54,7 +54,7 @@ export const Card = (props: CardProps) => {
 
   return (
     <div
-      className={`${rarityClass.container} ${hoverClass} ${flipClass} flex flex-col w-[140px] h-[180px] rounded-md relative`}
+      className={`${rarityClass.container} ${hoverClass} ${flipClass} flex flex-col w-[140px] h-[180px] rounded-md relative transition-all ease-in duration-150`}
       style={{ boxShadow: "11px 8px 28px -10px rgba(0,0,0,0.75)" }}
       onMouseEnter={() => isHoverable && setIsHovered(true)}
       onMouseLeave={() => isHoverable && setIsHovered(false)}

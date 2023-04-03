@@ -63,7 +63,7 @@ export const Arena = () => {
     id: 5,
     name: "Makima",
     image:
-      "https://preview.redd.it/art-miss-makima-chainsaw-man-v0-t7twxkxwi6m91.jpg?width=640&crop=smart&auto=webp&s=0bb7325cac6a6d4e7495b81d36602d0749bb07ac",
+      "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b00b0fe9-9307-4add-2816-21957ccc1600/width=400/00088.png",
     description: "",
     attack: 99,
     health: 99,
@@ -76,7 +76,7 @@ export const Arena = () => {
     id: 6,
     name: "Makima",
     image:
-      "https://preview.redd.it/art-miss-makima-chainsaw-man-v0-t7twxkxwi6m91.jpg?width=640&crop=smart&auto=webp&s=0bb7325cac6a6d4e7495b81d36602d0749bb07ac",
+      "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b00b0fe9-9307-4add-2816-21957ccc1600/width=400/00088.png",
     description: "",
     attack: 99,
     health: 99,
@@ -89,7 +89,7 @@ export const Arena = () => {
     id: 7,
     name: "Makima",
     image:
-      "https://preview.redd.it/art-miss-makima-chainsaw-man-v0-t7twxkxwi6m91.jpg?width=640&crop=smart&auto=webp&s=0bb7325cac6a6d4e7495b81d36602d0749bb07ac",
+      "https://imagecache.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/b00b0fe9-9307-4add-2816-21957ccc1600/width=400/00088.png",
     description: "",
     attack: 99,
     health: 99,
