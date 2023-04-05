@@ -146,7 +146,7 @@ export const Arena = () => {
         <div className="flex flex-col h-[50%] w-full bg-red-700/10 items-center">
           <div className="flex flex-row items-center h-[34%] justify-center w-full">
             <div
-              className="w-full max-w-[840px] h-full flex flex-row items-center justify-center rounded-b-md"
+              className="w-full max-w-[750px] h-full flex flex-row items-center justify-center rounded-b-md"
               style={{ boxShadow: "0px 8px 76px -11px rgba(0,0,0,0.69)" }}
             >
               <div className="-ml-14 flex flex-row items-center justify-center mb-20">
@@ -165,18 +165,15 @@ export const Arena = () => {
             </div>
 
             <div className="flex flex-row items-center ml-[180px] mb-20 rotate-180">
-              {cards
-                .filter((char) => ![2, 4].includes(char.id))
-                .map((card) => (
-                  <div key={card.id} style={{ marginRight: `-142px` }}>
-                    <Card
-                      position="top"
-                      card={card}
-                      isFlipped
-                      isHoverable={false}
-                    />
-                  </div>
-                ))}
+              {cards.map((card, index) => (
+                <div
+                  key={card.id}
+                  style={{ marginRight: `-142px` }}
+                  className={index === 0 ? "rotate-6" : ""}
+                >
+                  <Card card={card} isFlipped isHoverable={false} />
+                </div>
+              ))}
             </div>
           </div>
 
@@ -185,7 +182,7 @@ export const Arena = () => {
               .filter((char) => ![3, 5].includes(char.id))
               .map((card) => (
                 <div key={card.id} className="mr-4">
-                  <Card position="none" card={card} />
+                  <Card card={card} />
                 </div>
               ))}
           </div>
@@ -206,29 +203,26 @@ export const Arena = () => {
               .filter((char) => ![4, 2, 6, 9, 7].includes(char.id))
               .map((card) => (
                 <div key={card.id} className="mr-4">
-                  <Card position="none" card={card} />
+                  <Card card={card} />
                 </div>
               ))}
           </div>
 
           <div className="flex flex-row items-center h-[34%] justify-center w-full">
             <div className="flex flex-row items-center mr-[180px] mt-20">
-              {cards
-                .filter((char) => ![2, 4].includes(char.id))
-                .map((card) => (
-                  <div key={card.id} style={{ marginRight: `-142px` }}>
-                    <Card
-                      position="top"
-                      card={card}
-                      isFlipped
-                      isHoverable={false}
-                    />
-                  </div>
-                ))}
+              {cards.map((card, index) => (
+                <div
+                  key={card.id}
+                  style={{ marginRight: `-142px` }}
+                  className={index === 0 ? "rotate-6" : ""}
+                >
+                  <Card card={card} isFlipped isHoverable={false} />
+                </div>
+              ))}
             </div>
 
             <div
-              className="w-full max-w-[840px] h-full flex flex-row items-center justify-center rounded-t-md"
+              className="w-full max-w-[750px] h-full flex flex-row items-center justify-center rounded-t-md"
               style={{ boxShadow: "0px -8px 76px -11px rgba(0,0,0,0.69)" }}
             >
               <div className="-ml-14 flex flex-row items-center justify-center mt-20">
@@ -244,6 +238,8 @@ export const Arena = () => {
                   ))}
               </div>
             </div>
+
+            <div className="flex ml-14 w-[100px] h-[100px] bg-white"></div>
           </div>
         </div>
       </div>

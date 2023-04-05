@@ -7,7 +7,7 @@ type CardProps = {
   card: CardEntity;
   isFlipped?: boolean;
   isHoverable?: boolean;
-  position: "top" | "bottom" | "none";
+  position?: "top" | "bottom" | "none";
 };
 
 type Colors = {
@@ -34,13 +34,18 @@ const rarityClasses = new Map<Rarity, Colors>([
 ]);
 
 const positionClasses = new Map<"top" | "bottom" | "none", string>([
-  ["bottom", "-top-[100px] scale-[1.4]"],
-  ["top", "scale-[1.1]"],
-  ["none", "scale-[1.1]"],
+  ["bottom", "-top-[80px] scale-[1.2]"],
+  ["top", "scale-[1.07]"],
+  ["none", "scale-[1.07]"],
 ]);
 
 export const Card = (props: CardProps) => {
-  const { card, position, isFlipped = false, isHoverable = true } = props;
+  const {
+    card,
+    position = "none",
+    isFlipped = false,
+    isHoverable = true,
+  } = props;
 
   const [isHovered, setIsHovered] = useState(false);
 
